@@ -1,0 +1,21 @@
+import {ChangeDetectionStrategy, Component} from '@angular/core';
+import {FieldType, FieldTypeConfig, FormlyAttributes} from '@ngx-formly/core';
+import {FormlyFieldProps} from '@ngx-formly/primeng/form-field';
+import {Textarea} from "primeng/textarea";
+import {ReactiveFormsModule} from "@angular/forms";
+
+interface TextAreaProps extends FormlyFieldProps {
+}
+
+@Component({
+  selector: 'formly-field-primeng-textarea',
+  template: ` <textarea [formControl]="formControl" [formlyAttributes]="field" pTextarea></textarea> `,
+  changeDetection: ChangeDetectionStrategy.OnPush,
+  imports: [
+    Textarea,
+    ReactiveFormsModule,
+    FormlyAttributes
+  ]
+})
+export class FormlyFieldTextArea extends FieldType<FieldTypeConfig<TextAreaProps>> {
+}

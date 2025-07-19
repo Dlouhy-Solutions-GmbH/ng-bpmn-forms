@@ -14,7 +14,11 @@
     "skipLibCheck": true,
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
-    "paths": {}
+    "paths": {
+      "@dlouhy-solutions/ng-bpmn-forms": [
+        "libs/feature-ng-bpmn-forms/src/index.ts"
+      ]
+    }
   },
   "exclude": ["node_modules", "tmp"]
 }

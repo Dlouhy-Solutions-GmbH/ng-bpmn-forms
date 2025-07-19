@@ -1,0 +1,84 @@
+{
+  "components": [
+    {
+      "label": "Text field",
+      "type": "textfield",
+      "layout": {
+        "row": "Row_1ahpwq1",
+        "columns": null
+      },
+      "id": "Field_121ok2s",
+      "key": "textfield_xgkm5",
+      "disabled": false,
+      "readonly": false,
+      "validate": {
+        "required": false
+      }
+    },
+    {
+      "label": "Text area",
+      "type": "textarea",
+      "layout": {
+        "row": "Row_0ldc7lx",
+        "columns": null
+      },
+      "id": "Field_06bfdhd",
+      "key": "textarea_xunfa8",
+      "readonly": "on"
+    },
+    {
+      "label": "Number",
+      "type": "number",
+      "layout": {
+        "row": "Row_0e1j42y",
+        "columns": null
+      },
+      "id": "Field_0wtko40",
+      "key": "number_cxuzzg"
+    },
+    {
+      "label": "Checkbox",
+      "type": "checkbox",
+      "layout": {
+        "row": "Row_1xf7cv3",
+        "columns": null
+      },
+      "id": "Field_0rfwm02",
+      "key": "checkbox_wqbact"
+    },
+    {
+      "label": "Select",
+      "values": [
+        {
+          "label": "Value",
+          "value": "value"
+        },
+        {
+          "label": "Value 2",
+          "value": "value2"
+        },
+        {
+          "label": "Value 3",
+          "value": "value3"
+        }
+      ],
+      "type": "select",
+      "layout": {
+        "row": "Row_11pbc4t",
+        "columns": null
+      },
+      "id": "Field_0ae3j4z",
+      "key": "select_b0weep",
+      "defaultValue": "value"
+    }
+  ],
+  "type": "default",
+  "id": "Form_0voyqda",
+  "executionPlatform": "Camunda Cloud",
+  "executionPlatformVersion": "8.7.0",
+  "exporter": {
+    "name": "Camunda Modeler",
+    "version": "5.37.0"
+  },
+  "schemaVersion": 18
+}
