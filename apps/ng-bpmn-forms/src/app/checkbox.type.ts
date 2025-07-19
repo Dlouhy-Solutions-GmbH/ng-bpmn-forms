@@ -4,7 +4,7 @@ import {Checkbox} from "primeng/checkbox";
 
 
 @Component({
-  selector: 'formly-field-primeng-checkbox',
+  selector: 'app-field-primeng-checkbox',
   template: `
     <div class="p-field-checkbox flex items-center gap-1">
       <p-checkbox

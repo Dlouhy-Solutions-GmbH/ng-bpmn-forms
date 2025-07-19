@@ -2,7 +2,8 @@
   "name": "@ng-bpmn-forms/source",
   "version": "0.0.0",
   "license": "MIT",
-  "scripts": {},
+  "scripts": {
+  },
   "private": true,
   "dependencies": {
     "@angular/animations": "~20.0.0",

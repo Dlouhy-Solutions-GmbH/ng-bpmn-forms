@@ -4,11 +4,10 @@ import {FormlyFieldProps} from '@ngx-formly/primeng/form-field';
 import {Textarea} from "primeng/textarea";
 import {ReactiveFormsModule} from "@angular/forms";
 
-interface TextAreaProps extends FormlyFieldProps {
-}
+type TextAreaProps = FormlyFieldProps
 
 @Component({
-  selector: 'formly-field-primeng-textarea',
+  selector: 'app-field-primeng-textarea',
   template: ` <textarea [formControl]="formControl" [formlyAttributes]="field" pTextarea></textarea> `,
   changeDetection: ChangeDetectionStrategy.OnPush,
   imports: [
