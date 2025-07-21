@@ -8,7 +8,7 @@ type TextAreaProps = FormlyFieldProps
 
 @Component({
   selector: 'app-field-primeng-textarea',
-  template: ` <textarea [formControl]="formControl" [formlyAttributes]="field" pTextarea></textarea> `,
+  template: ` <textarea [formControl]="formControl" [formlyAttributes]="field" pTextarea class="w-full"></textarea> `,
   changeDetection: ChangeDetectionStrategy.OnPush,
   imports: [
     Textarea,
