@@ -1,1 +1,2 @@
-export * from './lib/feature-ng-bpmn-forms/feature-ng-bpmn-forms';
+export * from './lib/ng-bpmn-form/ng-bpmn-form.component';
+export * from './lib/fromjs.models';

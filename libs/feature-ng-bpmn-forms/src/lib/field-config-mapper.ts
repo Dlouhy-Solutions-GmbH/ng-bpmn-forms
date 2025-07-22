@@ -14,7 +14,7 @@ export class FieldConfigMapper {
         type: this.mapType(value.type),
         defaultValue: value.defaultValue,
         props: {
-          label: value.label,
+          label: value.label || value.dateLabel || value.timeLabel,
           required: value.validate?.required,
           max: value.validate?.max,
           maxLength: value.validate?.maxLength,
@@ -22,16 +22,30 @@ export class FieldConfigMapper {
           minLength: value.validate?.minLength,
           pattern: value.validate?.pattern,
           options: value.values,
-
-        }
+        },
+        wrappers: ['form-field'],
       }
     })
+  }
+
+  mapModel(json: FormJS) {
+    const model: { [key: string]: any } = {}
+    json.components.forEach(value => {
+      if (value.key) {
+        model[value.key] = value.defaultValue
+      }
+    })
+    return model
   }
 
   private mapType(type: ComponentType): string {
     switch (type) {
       case ComponentType.Textfield:
         return 'input'
+      case ComponentType.Datetime:
+        return 'datepicker'
+      case ComponentType.Checklist:
+        return 'checkbox-group'
       default:
         return type
     }

@@ -8,6 +8,8 @@ import {provideAnimationsAsync} from "@angular/platform-browser/animations/async
 import Aura from '@primeuix/themes/aura';
 import {provideHttpClient} from "@angular/common/http";
 import {FormlyFieldTextArea} from "./textarea.type";
+import {FormlyFieldDatepicker} from "./datepicker.type";
+import {FormlyFieldCheckboxGroup} from "./checkbox-group.type";
 
 export const appConfig: ApplicationConfig = {
   providers: [
@@ -29,6 +31,8 @@ export const appConfig: ApplicationConfig = {
         ],
         types: [
           {name: 'textarea', component: FormlyFieldTextArea},
+          {name: 'datepicker', component: FormlyFieldDatepicker},
+          {name: 'checkbox-group', component: FormlyFieldCheckboxGroup},
           // { name: 'checkbox', component: FormlyFieldCheckbox },
         ],
       }

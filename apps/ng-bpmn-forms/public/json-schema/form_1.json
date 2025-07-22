@@ -12,7 +12,8 @@
       "disabled": false,
       "readonly": false,
       "validate": {
-        "required": false
+        "required": false,
+        "validationType": "phone"
       }
     },
     {
@@ -37,14 +38,73 @@
       "key": "number_cxuzzg"
     },
     {
+      "subtype": "date",
+      "dateLabel": "Date",
+      "type": "datetime",
+      "layout": {
+        "row": "Row_1gqg8p1",
+        "columns": null
+      },
+      "id": "Field_0e1q50a",
+      "key": "datetime_3s3vdl"
+    },
+    {
       "label": "Checkbox",
       "type": "checkbox",
       "layout": {
-        "row": "Row_1xf7cv3",
+        "row": "Row_0mn83z2",
         "columns": null
       },
       "id": "Field_0rfwm02",
       "key": "checkbox_wqbact"
+    },
+    {
+      "label": "Checkbox group",
+      "values": [
+        {
+          "label": "Value",
+          "value": "value"
+        },
+        {
+          "label": "Value 2",
+          "value": "value2"
+        },
+        {
+          "label": "Value 3",
+          "value": "value3"
+        }
+      ],
+      "type": "checklist",
+      "layout": {
+        "row": "Row_1bwq1y6",
+        "columns": null
+      },
+      "id": "Field_13fmpet",
+      "key": "checklist_eb7ae"
+    },
+    {
+      "label": "Radio group",
+      "values": [
+        {
+          "label": "Value",
+          "value": "value"
+        },
+        {
+          "label": "Value 2",
+          "value": "value2"
+        },
+        {
+          "label": "Value 3",
+          "value": "value3"
+        }
+      ],
+      "type": "radio",
+      "layout": {
+        "row": "Row_16stakl",
+        "columns": null
+      },
+      "id": "Field_0vzlwme",
+      "key": "radio_vt2avs"
     },
     {
       "label": "Select",

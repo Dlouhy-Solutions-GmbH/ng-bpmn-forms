@@ -1,13 +1,31 @@
-import {Component} from '@angular/core';
+import {Component, inject} from '@angular/core';
 import {RouterModule} from '@angular/router';
-import {FeatureNgBpmnForms} from "@dlouhy-solutions/ng-bpmn-forms";
+import {FormJS, NgBpmnForm} from "@dlouhy-solutions/ng-bpmn-forms";
+import {HttpClient} from "@angular/common/http";
+import {AsyncPipe} from "@angular/common";
+import {Observable, tap} from "rxjs";
+import {Panel} from "primeng/panel";
+import {Button} from "primeng/button";
+import {FormlyModule} from "@ngx-formly/core";
+import {FormsModule, ReactiveFormsModule, UntypedFormGroup} from "@angular/forms";
 
 @Component({
-  imports: [RouterModule, FeatureNgBpmnForms],
+  imports: [RouterModule, NgBpmnForm, AsyncPipe, Panel, Button, FormlyModule, FormsModule, ReactiveFormsModule],
   selector: 'app-root',
   templateUrl: './app.html',
   styleUrl: './app.scss',
 })
 export class App {
-  protected title = 'ng-bpmn-forms';
+  private http = inject(HttpClient);
+  form = new UntypedFormGroup({});
+
+  data$: Observable<FormJS>
+
+  constructor() {
+    this.data$ = this.http.get<FormJS>(`json-schema/form_1.json`).pipe(tap(json => console.log(json)))
+  }
+
+  onSubmit(form: UntypedFormGroup) {
+    console.log('Submited Form: ', form.getRawValue())
+  }
 }
