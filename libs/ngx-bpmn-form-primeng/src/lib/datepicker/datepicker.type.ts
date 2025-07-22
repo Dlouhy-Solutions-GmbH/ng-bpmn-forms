@@ -24,7 +24,7 @@ interface DatepickerProps extends FormlyFieldProps {
 }
 
 @Component({
-  selector: 'app-field-primeng-datepicker',
+  selector: 'ngx-bpmn-field-primeng-datepicker',
   template: `
     <p-date-picker
       class="w-full"
@@ -48,20 +48,18 @@ interface DatepickerProps extends FormlyFieldProps {
     </p-date-picker>
   `,
   changeDetection: ChangeDetectionStrategy.OnPush,
-  imports: [
-    DatePicker,
-    ReactiveFormsModule,
-    FormlyAttributes
-  ]
+  imports: [DatePicker, ReactiveFormsModule, FormlyAttributes],
 })
-export class FormlyFieldDatepicker extends FieldType<FieldTypeConfig<DatepickerProps>> {
+export class NgxBpmnDatepicker extends FieldType<
+  FieldTypeConfig<DatepickerProps>
+> {
   override defaultOptions?: Partial<FieldTypeConfig<DatepickerProps>> = {
     props: {
       numberOfMonths: 1,
       defaultDate: null,
       hourFormat: '',
       showTime: false,
-      monthNavigator: false
+      monthNavigator: false,
     },
   };
 }

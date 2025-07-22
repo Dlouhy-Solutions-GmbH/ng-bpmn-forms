@@ -1,8 +1,8 @@
 {
-  "name": "feature-ngx-bpmn-form",
+  "name": "ngx-bpmn-form-primeng",
   "$schema": "../../node_modules/nx/schemas/project-schema.json",
-  "sourceRoot": "libs/feature-ngx-bpmn-form/src",
-  "prefix": "ng-bpmn",
+  "sourceRoot": "libs/ngx-bpmn-form-primeng/src",
+  "prefix": "ngx-bpmn",
   "projectType": "library",
   "release": {
     "version": {
@@ -21,14 +21,14 @@
         "{workspaceRoot}/dist/{projectRoot}"
       ],
       "options": {
-        "project": "libs/feature-ngx-bpmn-form/ng-package.json"
+        "project": "libs/ngx-bpmn-form-primeng/ng-package.json"
       },
       "configurations": {
         "production": {
-          "tsConfig": "libs/feature-ngx-bpmn-form/tsconfig.lib.prod.json"
+          "tsConfig": "libs/ngx-bpmn-form-primeng/tsconfig.lib.prod.json"
         },
         "development": {
-          "tsConfig": "libs/feature-ngx-bpmn-form/tsconfig.lib.json"
+          "tsConfig": "libs/ngx-bpmn-form-primeng/tsconfig.lib.json"
         }
       },
       "defaultConfiguration": "production"
@@ -44,7 +44,7 @@
         "{workspaceRoot}/coverage/{projectRoot}"
       ],
       "options": {
-        "jestConfig": "libs/feature-ngx-bpmn-form/jest.config.ts"
+        "jestConfig": "libs/ngx-bpmn-form-primeng/jest.config.ts"
       }
     },
     "lint": {

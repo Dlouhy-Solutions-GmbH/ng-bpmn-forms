@@ -1,8 +1,8 @@
 export default {
-  displayName: 'feature-ngx-bpmn-form',
+  displayName: 'ngx-bpmn-form-core',
   preset: '../../jest.preset.js',
   setupFilesAfterEnv: ['<rootDir>/src/test-setup.ts'],
-  coverageDirectory: '../../coverage/libs/feature-ngx-bpmn-form',
+  coverageDirectory: '../../coverage/libs/ngx-bpmn-form-core',
   transform: {
     '^.+\\.(ts|mjs|js|html)$': [
       'jest-preset-angular',

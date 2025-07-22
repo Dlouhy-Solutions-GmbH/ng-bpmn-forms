@@ -1,6 +1,6 @@
 import { Component, inject } from '@angular/core';
 import { RouterModule } from '@angular/router';
-import { FormJS, NgBpmnForm } from '@dlouhy-solutions/ngx-bpmn-form';
+import { FormJS, NgBpmnForm } from '@ngx-bpmn-form/ngx-bpmn-form-core';
 import { HttpClient } from '@angular/common/http';
 import { AsyncPipe } from '@angular/common';
 import { Observable, tap } from 'rxjs';

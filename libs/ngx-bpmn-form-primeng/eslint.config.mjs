@@ -26,7 +26,7 @@ export default [
         'error',
         {
           type: 'attribute',
-          prefix: 'ngBpmnForms',
+          prefix: 'ngxBpmn',
           style: 'camelCase',
         },
       ],
@@ -34,7 +34,7 @@ export default [
         'error',
         {
           type: 'element',
-          prefix: 'ng-bpmn',
+          prefix: 'ngx-bpmn',
           style: 'kebab-case',
         },
       ],

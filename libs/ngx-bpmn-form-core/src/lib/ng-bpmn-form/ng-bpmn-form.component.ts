@@ -6,14 +6,14 @@ import { FieldConfigMapper } from '../field-config-mapper';
 import { FormJS } from '../fromjs.models';
 
 @Component({
-  selector: 'ng-bpmn-form',
+  selector: 'ngx-bpmn-form',
   imports: [CommonModule, ReactiveFormsModule, FormlyModule],
   templateUrl: './ng-bpmn-form.component.html',
   styleUrl: './ng-bpmn-form.component.scss',
 })
 export class NgBpmnForm {
-  json = input<FormJS | undefined | null>()
-  form = input<UntypedFormGroup>(new UntypedFormGroup({}))
+  json = input<FormJS | undefined | null>();
+  form = input<UntypedFormGroup>(new UntypedFormGroup({}));
 
   private readonly mapper = inject(FieldConfigMapper);
 
@@ -30,12 +30,11 @@ export class NgBpmnForm {
     this.updateFormModel(inputData);
     const fields = this.mapper.map(inputData);
     console.log('FIELDS: ', fields);
-    return fields
+    return fields;
   }
 
   private updateFormModel(data: FormJS): void {
     this.model = this.mapper.mapModel(data);
     console.log('MODEL: ', this.model);
   }
-
 }

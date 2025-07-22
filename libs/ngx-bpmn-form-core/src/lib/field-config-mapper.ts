@@ -3,11 +3,11 @@ import { FormlyFieldConfig } from '@ngx-formly/core';
 import { ComponentType, FormJS } from './fromjs.models';
 
 @Injectable({
-  providedIn: 'root'
+  providedIn: 'root',
 })
 export class FieldConfigMapper {
   map(json: FormJS): FormlyFieldConfig[] {
-    return json.components.map(value => {
+    return json.components.map((value) => {
       return {
         id: value.id,
         key: value.key,
@@ -23,31 +23,30 @@ export class FieldConfigMapper {
           pattern: value.validate?.pattern,
           options: value.values,
         },
-        wrappers: ['form-field'],
-      }
-    })
+      };
+    });
   }
 
   mapModel(json: FormJS) {
-    const model: { [key: string]: any } = {}
-    json.components.forEach(value => {
+    const model: { [key: string]: any } = {};
+    json.components.forEach((value) => {
       if (value.key) {
-        model[value.key] = value.defaultValue
+        model[value.key] = value.defaultValue;
       }
-    })
-    return model
+    });
+    return model;
   }
 
   private mapType(type: ComponentType): string {
     switch (type) {
       case ComponentType.Textfield:
-        return 'input'
+        return 'input';
       case ComponentType.Datetime:
-        return 'datepicker'
+        return 'datepicker';
       case ComponentType.Checklist:
-        return 'checkbox-group'
+        return 'checkbox-group';
       default:
-        return type
+        return type;
     }
   }
 }

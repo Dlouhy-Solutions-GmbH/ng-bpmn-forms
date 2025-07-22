@@ -259,8 +259,8 @@ export interface FormJSComponent {
  * A button can either trigger a submit or a reset action. Defaults to submit.
  */
 export enum Action {
-  Reset = "reset",
-  Submit = "submit",
+  Reset = 'reset',
+  Submit = 'submit',
 }
 
 /**
@@ -590,9 +590,9 @@ export interface Security {
  * Defaults to date.
  */
 export enum Subtype {
-  Date = "date",
-  Datetime = "datetime",
-  Time = "time",
+  Date = 'date',
+  Datetime = 'datetime',
+  Time = 'time',
 }
 
 /**
@@ -600,37 +600,37 @@ export enum Subtype {
  * no_timezone.
  */
 export enum TimeSerializingFormat {
-  NoTimezone = "no_timezone",
-  UTCNormalized = "utc_normalized",
-  UTCOffset = "utc_offset",
+  NoTimezone = 'no_timezone',
+  UTCNormalized = 'utc_normalized',
+  UTCOffset = 'utc_offset',
 }
 
 /**
  * The type of a form field.
  */
 export enum ComponentType {
-  Button = "button",
-  Checkbox = "checkbox",
-  Checklist = "checklist",
-  Datetime = "datetime",
-  DocumentPreview = "documentPreview",
-  Dynamiclist = "dynamiclist",
-  Expression = "expression",
-  Filepicker = "filepicker",
-  Group = "group",
-  HTML = "html",
-  Iframe = "iframe",
-  Image = "image",
-  Number = "number",
-  Radio = "radio",
-  Select = "select",
-  Separator = "separator",
-  Spacer = "spacer",
-  Table = "table",
-  Taglist = "taglist",
-  Text = "text",
-  Textarea = "textarea",
-  Textfield = "textfield",
+  Button = 'button',
+  Checkbox = 'checkbox',
+  Checklist = 'checklist',
+  Datetime = 'datetime',
+  DocumentPreview = 'documentPreview',
+  Dynamiclist = 'dynamiclist',
+  Expression = 'expression',
+  Filepicker = 'filepicker',
+  Group = 'group',
+  HTML = 'html',
+  Iframe = 'iframe',
+  Image = 'image',
+  Number = 'number',
+  Radio = 'radio',
+  Select = 'select',
+  Separator = 'separator',
+  Spacer = 'spacer',
+  Table = 'table',
+  Taglist = 'taglist',
+  Text = 'text',
+  Textarea = 'textarea',
+  Textfield = 'textfield',
 }
 
 /**
@@ -676,10 +676,10 @@ export interface Validate {
  * (empty).
  */
 export enum ValidationType {
-  Custom = "custom",
-  Email = "email",
-  Empty = "",
-  Phone = "phone",
+  Custom = 'custom',
+  Email = 'email',
+  Empty = '',
+  Phone = 'phone',
 }
 
 export interface Value {
@@ -700,9 +700,9 @@ export interface Value {
  * Defaults to start.
  */
 export enum VerticalAlignment {
-  Center = "center",
-  End = "end",
-  Start = "start",
+  Center = 'center',
+  End = 'end',
+  Start = 'start',
 }
 
 /**
@@ -722,5 +722,5 @@ export interface Exporter {
 }
 
 export enum FormJSType {
-  Default = "default",
+  Default = 'default',
 }

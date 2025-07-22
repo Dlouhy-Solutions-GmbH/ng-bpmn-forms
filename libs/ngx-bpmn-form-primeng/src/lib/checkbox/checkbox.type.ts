@@ -2,9 +2,8 @@ import { ChangeDetectionStrategy, Component } from '@angular/core';
 import { FieldType, FieldTypeConfig } from '@ngx-formly/core';
 import { Checkbox } from 'primeng/checkbox';
 
-
 @Component({
-  selector: 'app-field-primeng-checkbox',
+  selector: 'ngx-bpmn-primeng-checkbox',
   template: `
     <div class="p-field-checkbox flex items-center gap-1">
       <p-checkbox
@@ -17,10 +16,8 @@ import { Checkbox } from 'primeng/checkbox';
     </div>
   `,
   changeDetection: ChangeDetectionStrategy.OnPush,
-  imports: [
-    Checkbox,
-  ]
+  imports: [Checkbox],
 })
-export class FormlyFieldCheckbox extends FieldType<FieldTypeConfig> {
-  override defaultOptions = {props: {hideLabel: true}};
+export class NgxBpmnCheckbox extends FieldType<FieldTypeConfig> {
+  override defaultOptions = { props: { hideLabel: true } };
 }
