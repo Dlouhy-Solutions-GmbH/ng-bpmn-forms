@@ -2,7 +2,7 @@
   "name": "feature-ng-bpmn-forms",
   "$schema": "../../node_modules/nx/schemas/project-schema.json",
   "sourceRoot": "libs/feature-ng-bpmn-forms/src",
-  "prefix": "ng-bpmn-forms",
+  "prefix": "ng-bpmn",
   "projectType": "library",
   "release": {
     "version": {

@@ -7,7 +7,7 @@ import {FormlySelectOptionsPipe} from "@ngx-formly/core/select";
 import {Checkbox} from "primeng/checkbox";
 
 @Component({
-  selector: 'formly-field-primeng-checkbox-group',
+  selector: 'app-field-primeng-checkbox-group',
   template: `
     @for (option of props.options | formlySelectOptions: field | async; track index; let index = $index) {
       <div

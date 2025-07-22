@@ -29,7 +29,7 @@ export class FieldConfigMapper {
   }
 
   mapModel(json: FormJS) {
-    let model: { [key: string]: any } = {}
+    const model: { [key: string]: any } = {}
     json.components.forEach(value => {
       if (value.key) {
         model[value.key] = value.defaultValue

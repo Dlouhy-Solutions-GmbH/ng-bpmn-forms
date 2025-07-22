@@ -24,7 +24,7 @@ interface DatepickerProps extends FormlyFieldProps {
 }
 
 @Component({
-  selector: 'formly-field-primeng-datepicker',
+  selector: 'app-field-primeng-datepicker',
   template: `
     <p-date-picker
       class="w-full"

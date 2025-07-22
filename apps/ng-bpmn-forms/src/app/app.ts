@@ -1,8 +1,7 @@
 import {Component, inject} from '@angular/core';
 import {RouterModule} from '@angular/router';
-import {FeatureNgBpmnForms} from "@dlouhy-solutions/ng-bpmn-forms";
+import {FormJS, NgBpmnForm} from "@dlouhy-solutions/ng-bpmn-forms";
 import {HttpClient} from "@angular/common/http";
-import {FormJS} from "../../../../libs/feature-ng-bpmn-forms/src/lib/fromjs.models";
 import {AsyncPipe} from "@angular/common";
 import {Observable, tap} from "rxjs";
 import {Panel} from "primeng/panel";
@@ -11,7 +10,7 @@ import {FormlyModule} from "@ngx-formly/core";
 import {FormsModule, ReactiveFormsModule, UntypedFormGroup} from "@angular/forms";
 
 @Component({
-  imports: [RouterModule, FeatureNgBpmnForms, AsyncPipe, Panel, Button, FormlyModule, FormsModule, ReactiveFormsModule],
+  imports: [RouterModule, NgBpmnForm, AsyncPipe, Panel, Button, FormlyModule, FormsModule, ReactiveFormsModule],
   selector: 'app-root',
   templateUrl: './app.html',
   styleUrl: './app.scss',

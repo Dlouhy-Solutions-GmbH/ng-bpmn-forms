@@ -34,7 +34,7 @@ export default [
         'error',
         {
           type: 'element',
-          prefix: 'ng-bpmn-forms',
+          prefix: 'ng-bpmn',
           style: 'kebab-case',
         },
       ],
