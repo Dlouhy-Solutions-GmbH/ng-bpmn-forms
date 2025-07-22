@@ -1,0 +1,11 @@
+{
+  "name": "ngx-bpmn-form-e2e",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "projectType": "application",
+  "sourceRoot": "apps/ngx-bpmn-form-e2e/src",
+  "implicitDependencies": [
+    "ngx-bpmn-form"
+  ],
+  "// targets": "to see all targets run: nx show project ngx-bpmn-form-e2e --web",
+  "targets": {}
+}

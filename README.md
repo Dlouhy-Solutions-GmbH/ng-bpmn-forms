@@ -1,2 +1,2 @@
-# ng-bpmn-forms
+# ngx-bpmn-form
 Create Angular Forms from bpmn JSON

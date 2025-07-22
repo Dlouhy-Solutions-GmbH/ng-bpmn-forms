@@ -1,5 +1,5 @@
 {
-  "name": "@ng-bpmn-forms/source",
+  "name": "@ngx-bpmn-form/source",
   "$schema": "node_modules/nx/schemas/project-schema.json",
   "targets": {
     "local-registry": {
