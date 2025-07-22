@@ -3,7 +3,9 @@
   "version": "0.0.1",
   "peerDependencies": {
     "@angular/core": "^20.0.0",
-    "@ngx-formly/core": "^7.0.0"
+    "@ngx-formly/core": "^7.0.0",
+    "@angular/common": "~20.0.0",
+    "@angular/forms": "~20.0.0"
   },
   "sideEffects": false
 }
