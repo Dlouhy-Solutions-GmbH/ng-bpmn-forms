@@ -15,8 +15,11 @@
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
-      "@dlouhy-solutions/ng-bpmn-forms": [
-        "libs/feature-ng-bpmn-forms/src/index.ts"
+      "@ngx-bpmn-form/ngx-bpmn-form-core": [
+        "libs/ngx-bpmn-form-core/src/index.ts"
+      ],
+      "@ngx-bpmn-form/primeng": [
+        "libs/ngx-bpmn-form-primeng/src/index.ts"
       ]
     }
   },

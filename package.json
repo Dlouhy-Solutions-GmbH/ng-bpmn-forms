@@ -1,8 +1,10 @@
 {
-  "name": "@ng-bpmn-forms/source",
+  "name": "@ngx-bpmn-form/source",
   "version": "0.0.0",
   "license": "MIT",
   "scripts": {
+    "release": "npx nx run-many -t build && tsx tools/release",
+    "local-registry": "nx local-registry"
   },
   "private": true,
   "dependencies": {
@@ -68,7 +70,8 @@
     "tslib": "^2.3.0",
     "typescript": "~5.8.2",
     "typescript-eslint": "^8.29.0",
-    "verdaccio": "^6.0.5"
+    "verdaccio": "^6.0.5",
+    "tsx": "^4.20.3"
   },
   "nx": {
     "includedScripts": []
