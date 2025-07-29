@@ -1,0 +1,17 @@
+<p-iftalabel class="p-field">
+  @if (props.label && props.hideLabel !== true) {
+    <label [for]="id">
+      {{ props.label }}
+      @if (props.required && props.hideRequiredMarker !== true) {
+        <span aria-hidden="true">*</span>
+      }
+    </label>
+  }
+  <ng-container #fieldComponent></ng-container>
+
+  @if (showError) {
+    <p-message severity="error" variant="simple" size="small">
+      <formly-validation-message class="ui-message-text" [field]="field"></formly-validation-message>
+    </p-message>
+  }
+</p-iftalabel>
