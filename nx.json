@@ -104,7 +104,6 @@
       "libs/ngx-bpmn-form-primeng"
     ],
     "projectsRelationship": "independent",
-    "versionPlans": true,
     "version": {
       "conventionalCommits": true,
       "preVersionCommand": "npx nx run-many -t build"
