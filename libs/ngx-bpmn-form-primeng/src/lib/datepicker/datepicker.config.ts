@@ -7,7 +7,7 @@ export function withDatepicker(): ConfigOption {
       {
         name: 'datepicker',
         component: NgxBpmnDatepicker,
-        wrappers: ['form-field'],
+        wrappers: ['ifta-label'],
       },
     ],
   };

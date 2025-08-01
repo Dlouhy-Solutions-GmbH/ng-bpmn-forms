@@ -12,7 +12,7 @@
       "disabled": false,
       "readonly": false,
       "validate": {
-        "required": false,
+        "required": true,
         "validationType": "phone"
       }
     },
@@ -35,7 +35,10 @@
         "columns": null
       },
       "id": "Field_0wtko40",
-      "key": "number_cxuzzg"
+      "key": "number_cxuzzg",
+      "validate": {
+        "min": "5"
+      }
     },
     {
       "subtype": "date",

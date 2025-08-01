@@ -12,8 +12,7 @@
     "@ngx-formly/core": "^7.0.0",
     "@angular/forms": "~20.0.0",
     "@ngx-formly/primeng": "^7.0.0",
-    "primeng": "^20.0.0",
-    "@nx/angular": "21.2.3"
+    "primeng": "^20.0.0"
   },
   "sideEffects": false
 }

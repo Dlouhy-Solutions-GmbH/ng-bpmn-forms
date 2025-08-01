@@ -7,7 +7,7 @@ export function withTextArea(): ConfigOption {
       {
         name: 'textarea',
         component: NgxBpmnTextArea,
-        wrappers: ['form-field'],
+        wrappers: ['ifta-label'],
       },
     ],
   };
