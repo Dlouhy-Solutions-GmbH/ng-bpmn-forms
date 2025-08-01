@@ -109,14 +109,13 @@
       "preVersionCommand": "npx nx run-many -t build"
     },
     "changelog": {
-      "projectChangelogs": true,
-      "workspaceChangelog": {
+      "projectChangelogs": {
         "createRelease": "github",
         "renderOptions": {
           "authors": true,
-          "mapAuthorsToGitHubUsernames": true,
+          "mapAuthorsToGitHubUsernames": false,
           "versionTitleDate": true,
-          "commitReferences": true
+          "commitReferences": false
         }
       }
     },
