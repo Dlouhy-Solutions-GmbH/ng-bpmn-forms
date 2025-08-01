@@ -19,7 +19,7 @@ describe('ui-primeng: ifta-label Wrapper', () => {
       },
     });
 
-    expct(query'formly-wrapper-primeng-ifta-label')).not.toBeNull();
+    expect(query('formly-wrapper-primeng-ifta-label')).not.toBeNull();
 
     // Label + Required marker
     expect(query('label').nativeElement.textContent).toEqual(' Name *');
