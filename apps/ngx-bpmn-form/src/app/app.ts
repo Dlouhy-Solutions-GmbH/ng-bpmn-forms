@@ -1,12 +1,11 @@
 import { Component, inject } from '@angular/core';
 import { RouterModule } from '@angular/router';
-import { FormJS, NgBpmnForm } from '@ngx-bpmn-form/ngx-bpmn-form-core';
+import { FormJS, NgxBpmnForm } from '@ngx-bpmn-form/ngx-bpmn-form-core';
 import { HttpClient } from '@angular/common/http';
 import { AsyncPipe } from '@angular/common';
 import { Observable, tap } from 'rxjs';
 import { Panel } from 'primeng/panel';
 import { Button } from 'primeng/button';
-import { FormlyModule } from '@ngx-formly/core';
 import {
   FormsModule,
   ReactiveFormsModule,
@@ -16,11 +15,10 @@ import {
 @Component({
   imports: [
     RouterModule,
-    NgBpmnForm,
+    NgxBpmnForm,
     AsyncPipe,
     Panel,
     Button,
-    FormlyModule,
     FormsModule,
     ReactiveFormsModule,
   ],
