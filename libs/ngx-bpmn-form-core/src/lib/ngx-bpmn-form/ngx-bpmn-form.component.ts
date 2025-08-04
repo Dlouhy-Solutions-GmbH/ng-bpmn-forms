@@ -8,10 +8,10 @@ import { FormJS } from '../fromjs.models';
 @Component({
   selector: 'ngx-bpmn-form',
   imports: [CommonModule, ReactiveFormsModule, FormlyModule],
-  templateUrl: './ng-bpmn-form.component.html',
-  styleUrl: './ng-bpmn-form.component.scss',
+  templateUrl: './ngx-bpmn-form.component.html',
+  styleUrl: './ngx-bpmn-form.component.scss',
 })
-export class NgBpmnForm {
+export class NgxBpmnForm {
   json = input<FormJS | undefined | null>();
   form = input<UntypedFormGroup>(new UntypedFormGroup({}));
 
