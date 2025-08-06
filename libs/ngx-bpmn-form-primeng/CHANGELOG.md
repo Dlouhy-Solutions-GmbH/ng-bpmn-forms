@@ -1,3 +1,13 @@
+## 0.1.1 (2025-08-06)
+
+### 📖 Documentation
+
+- update README for `ngx-bpmn-form-core` and `ngx-bpmn-form-primeng` with usage, installation, and features information
+
+### ❤️ Thank You
+
+- David Dlouhy
+
 ## 0.1.0 (2025-08-01)
 
 ### 🚀 Features
